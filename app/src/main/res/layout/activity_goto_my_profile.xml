@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GotoMyProfileActivity"
+    android:background="#f2f5df"
+    >
+
+    <ImageView
+        android:id="@+id/img_Snow"
+        android:layout_width="163dp"
+        android:layout_height="221dp"
+        app:srcCompat="@drawable/pet9" />
+
+    <ImageView
+        android:id="@+id/img_Fluffy"
+        android:layout_width="163dp"
+        android:layout_height="221dp"
+        android:layout_below="@+id/img_Snow"
+        android:layout_marginTop="-33dp"
+        app:srcCompat="@drawable/pet10" />
+
+    <TextView
+        android:id="@+id/txt_Snow"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/img_Snow"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="96dp"
+        android:layout_toEndOf="@+id/img_Snow"
+        android:text="Snow"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_Fluffy"
+        android:layout_width="96dp"
+        android:layout_height="31dp"
+        android:layout_alignStart="@+id/txt_Snow"
+        android:layout_alignTop="@+id/img_Fluffy"
+        android:layout_alignEnd="@+id/txt_Snow"
+        android:layout_alignBottom="@+id/img_Fluffy"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="95dp"
+        android:text="Fluffy"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_delete_Snow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_Snow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btn_edit_Snow"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/btn_delete_Snow"
+        android:layout_alignStart="@+id/txt_Snow"
+        android:layout_alignBottom="@+id/img_Snow"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/buttons"
+        android:text="EDIT"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_delete_Fluffy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_Snow"
+        android:layout_alignEnd="@+id/btn_edit_Snow"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btn_edit_Fluffy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_delete_Fluffy"
+        android:layout_alignStart="@+id/txt_Snow"
+        android:layout_alignEnd="@+id/btn_edit_Snow"
+        android:layout_alignBottom="@+id/img_Snow"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-122dp"
+        android:background="@drawable/buttons"
+        android:text="Edıt"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
